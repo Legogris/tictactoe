@@ -46,14 +46,14 @@ console.log("Express server listening on port %d in %s mode", app.address().port
 var clients = {};
 
 var fs = require('fs');
-var server = require('http').createServer(function(req, response){
+/*var server = require('http').createServer(function(req, response){
   fs.readFile('index.html', function(err, data){
     response.writeHead(200, {'Content-Type':'text/html'});  
     response.write(data);  
     response.end();
   });
 });
-server.listen(8080);
+server.listen(8080);*/
 var everyone = require('now').initialize(server);
 
 
