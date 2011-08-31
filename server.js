@@ -54,7 +54,7 @@ var fs = require('fs');
   });
 });
 server.listen(8080);*/
-var everyone = require('now').initialize(server);
+var everyone = require('now').initialize(app);
 
 
 everyone.connected(function(){
