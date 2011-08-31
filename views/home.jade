@@ -1,16 +1,4 @@
 #gamePanel
-    #cr-stage	
+  #cr-stage	
 #controlPanel
-	#status(style='display: none;')
-
-#auth
-	- if (!everyauth.loggedIn || !everyauth.facebook)
-		h2 Not Authenticated
-		#fb-login.fb_button(style='background-position: left -188px')
-			a.fb_button_medium(href='/auth/facebook')
-				span#fb_login_text.fb_button_text Connect with Facebook
-		p.code#fbUser
-	- else
-		h2 Hello #{everyauth.facebook.user.first_name}
-		a(href='/logout') Logout
-		p.code#fbUser=JSON.stringify(everyauth.facebook.user)
+  #status(style='display: none;')
