@@ -1,16 +1,13 @@
-if(CM == undefined) { var CM = {} };
+if(CM === undefined) { var CM = {}; }
 
 CM.Settings = {
 	BackgroundColor: '#000',
-	ViewWidth: 660,
-	ViewHeight: 660,
+	ViewWidth: 600,
+	ViewHeight: 600,
 	BoardWidth: 600,
 	BoardHeight: 600,
 	FPS: 25,
-	SpritePath: '/img/',
-	StageBackground: "/img/boardtra2_03.png",
-	CowWidth: 50,
-	CowHeight: 50
+	SpritePath: '/img/'
 };
 
 
