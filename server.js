@@ -43,10 +43,7 @@ app.listen(8080);
 console.log("Express server listening on port %d in %s mode", app.address().port, app.settings.env);
 
 // then just pass the server app handle to .listen()!
-var ch = require('./clientHandler');
 var clients = {};
-
-
 
 var fs = require('fs');
 var server = require('http').createServer(function(req, response){
